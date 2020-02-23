@@ -12,7 +12,7 @@ const init = async () => {
     const customerBob = {
         customerId: bobId,
         firstName: 'Bobby',
-        lastName: 'Bob'
+        lastName: 'Bob',
         email: `${firstName.toLowerCase()}.${lastName.toLowerCase()}@drake.edu`,
         phoneNumber: '+1(515)555-5555'
     };
@@ -20,7 +20,7 @@ const init = async () => {
     const customerCharms = {
         customerId: uuid.v4(),
         firstName: 'Lucky',
-        lastName: 'Charms'
+        lastName: 'Charms',
         email: `${firstName.toLowerCase()}.${lastName.toLowerCase()}@drake.edu`,
         phoneNumber: '+1(777)777-7777'
     };
@@ -28,7 +28,7 @@ const init = async () => {
     const customerTitor = {
         customerId: uuid.v4(),
         firstName: 'John',
-        lastName: 'Titor'
+        lastName: 'Titor',
         email: `${firstName.toLowerCase()}.${lastName.toLowerCase()}@drake.edu`,
         phoneNumber: '+1(666)666-6666'
     };
