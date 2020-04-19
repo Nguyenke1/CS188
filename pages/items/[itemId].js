@@ -9,7 +9,7 @@ const Index = props => (
 
 Index.getInitialProps = async function(context) {
   const {itemId} = context.query;
-  const res = await fetch('http://localhost:5555/items/${itemId}');
+  const res = await fetch(`http://localhost:5555/items/${itemId}`);
   const item = await res.json();
 
   console.log(`Show data fetched. Item: ${item}`);
