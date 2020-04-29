@@ -1,7 +1,7 @@
 import fetch from 'isomorphic-unfetch';
 
 export const getCustomersCart = async () => {
-	const customerResponse = await fetch(`http://localhost:5555/customers`);
+    const customerResponse = await fetch(`http://localhost:5555/customers`);
     const [customer] = await customerResponse.json();
     const cartResponse = await fetch(`http://localhost:5555/customers/${customer.customerId}/carts`);
     const [cart] = await cartResponse.json();
